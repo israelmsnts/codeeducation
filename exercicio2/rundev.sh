@@ -1,0 +1,1 @@
+docker run -d --rm  -it --name devnode  -p 8080:8080 --mount type=bind,source="$(pwd)"/node,target=/app node
