@@ -3,12 +3,12 @@ services:
     proxy:
         image: contatos-proxy:v1
         ports:
-            - "80:80"
+            - "8080:8080"
     backend:
         image: contatos-backend:v1
         restart: always
         ports:
-            - "8080"
+            - "3000"
     database:
         image: contatos-db:v1
         ports:

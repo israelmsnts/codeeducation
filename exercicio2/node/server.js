@@ -17,7 +17,7 @@ const path = require('path');
 const index = path.join(__dirname, 'static', 'index.html');
 
 // Constants
-const PORT = 8080;
+const PORT = 3000;
 const HOST = '0.0.0.0';
 
 // App
