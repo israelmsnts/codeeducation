@@ -1,16 +1,22 @@
 version: '3'
 services:
     proxy:
-        image: contatos-proxy:v1
+            #image: contatos-proxy:v1
+        build: ./nginx
         ports:
             - "8080:8080"
+        depends_on:
+            - database
+            - backend
     backend:
-        image: contatos-backend:v1
+        build: ./node
         restart: always
         ports:
             - "3000"
+        depends_on:
+            - database
     database:
-        image: contatos-db:v1
+        build: ./mysql
         ports:
             - "3306"
         environment:

@@ -14,7 +14,7 @@ Suba tudo em um repositório e faça a entrega.
 
 build imagens
 ```
-  bash build.sh
+  docker-compose build
 ```
 iniciar servidores 
 ```
